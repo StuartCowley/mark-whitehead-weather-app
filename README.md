@@ -65,6 +65,8 @@
 - [![Java-script][javascript-shield]][javascript-url]
 - [![Node.js][node-shield]][node-url]
 - [![React.js][react.js]][react-url]
+- [![CSS][CSS]][CSS-url]
+- [![HTML][HTML]][HTML-url]
 <!-- - [![Express.js][express-shield]][express-url]
 - [![Mysql][mysql-shield]][mysql-url] -->
 <!-- - [![Vue][vue.js]][vue-url]
@@ -128,6 +130,10 @@ Project Link: [https://github.com/MaJaWh/weather-app](https://github.com/MaJaWh/
 [commit-url]: https://github.com/MaJaWh/music-library
 [javascript-url]: https://www.javascript.com/
 [javascript-shield]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
+[CSS]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
+[CSS-url]: https://www.w3.org/Style/CSS/Overview.en.html
+[HTML]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
+[HTML-url]: https://html.com/
 [node-shield]: https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
 [node-url]: https://nodejs.org/en/
 [express-shield]: https://img.shields.io/badge/Express.js-404D59?style=for-the-badge
