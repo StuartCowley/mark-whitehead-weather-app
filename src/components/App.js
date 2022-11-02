@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/App.css';
 import PropTypes from 'prop-types';
 import LocationDetails from './LocationDetails';
+import ForecastSummaries from './ForecastSummaries';
 
 function App({ location }) {
   const { city, country } = location;
@@ -11,6 +12,7 @@ function App({ location }) {
     <div className="App">
       <h1>Weather App</h1>
       <LocationDetails city={city} country={country} />
+      <ForecastSummaries />
     </div>
   );
 }
