@@ -1,8 +1,16 @@
-import React from 'react';
 import axios from 'axios';
 
-const getForecast = (setSelectedDate, setForecasts, setLocation) => {
-  const endpoint = 'https://mcr-codes-weather-app.herokuapp.com/forecast';
+const getForecast = (
+  searchText,
+  setSelectedDate,
+  setForecasts,
+  setLocation
+) => {
+  let endpoint = 'https://mcr-codes-weather-app.herokuapp.com/forecast';
+
+  if (searchText) {
+    endpoint += `?city=${searchText}`;
+  }
 
   axios.get(endpoint).then((response) => {
     setSelectedDate(response.data.forecasts[0].date);

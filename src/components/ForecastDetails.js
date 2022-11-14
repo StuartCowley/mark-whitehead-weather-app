@@ -29,7 +29,7 @@ function ForecastDetails(props) {
           {forecast.description}
         </div>
         <div className="forecast-details__icon">
-          <WeatherIcon name="owm" iconId={forecast.icon} />
+          <WeatherIcon name="owm" iconId={forecast.icon.toString()} />
         </div>
       </div>
     </div>
@@ -37,22 +37,20 @@ function ForecastDetails(props) {
 }
 
 ForecastDetails.propTypes = {
-  forecast: PropTypes.shape(
-    PropTypes.shape({
-      date: PropTypes.number,
-      temperature: PropTypes.shape({
-        min: PropTypes.number,
-        max: PropTypes.number,
-      }),
-      wind: PropTypes.shape({
-        speed: PropTypes.number,
-        direction: PropTypes.string,
-      }),
-      humidity: PropTypes.number,
-      description: PropTypes.string,
-      icon: PropTypes.string,
-    })
-  ).isRequired,
+  forecast: PropTypes.shape({
+    date: PropTypes.number,
+    temperature: PropTypes.shape({
+      min: PropTypes.number,
+      max: PropTypes.number,
+    }),
+    wind: PropTypes.shape({
+      speed: PropTypes.number,
+      direction: PropTypes.string,
+    }),
+    humidity: PropTypes.number,
+    description: PropTypes.string,
+    icon: PropTypes.number,
+  }).isRequired,
 };
 
 export default ForecastDetails;
