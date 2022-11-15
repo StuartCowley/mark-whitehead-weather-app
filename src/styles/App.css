@@ -1,23 +1,34 @@
 .weather-app {
-    background-color: rgb(106, 108, 120);
+    background: linear-gradient(140deg, rgba(27, 42, 43, 0.722), rgb(74, 74, 59),  rgba(27, 42, 43, 0.722) );
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
     border: 2px solid;
     border-radius: 5px;
-    margin: 0px;
+    margin: auto;
+    margin-top: 20px;
     width: 50%;
+    height: 800px;
 }
 .weather-app__title {
-    width: 100%;
-    font-size: 20px;
+    margin-top: 10px;
+    color: rgb(93, 93, 93);
+    font-size: 10px;
     text-align: center;
-    background-color: grey;
-    margin: 2px 0px 25px 0px
 }
 .forecast-summaries {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
 
+.weather-app__location-text-box {
+    background-color: rgb(227, 226, 226);
+    width: 100%;
+    height: 100px
+}
+
+.forecast-summary__icon-style {
+    color: yellow;
+    font-size: 30px;
 }

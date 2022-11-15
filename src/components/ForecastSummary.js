@@ -9,15 +9,29 @@ function ForecastSummary(props) {
 
   return (
     <div className="forecast-summary" data-testid="forecast-summary">
-      <div className="forecast-summary__date">{formattedDate}</div>
-      <div className="forecast-summary__icon" data-testid="forecast-icon">
-        <WeatherIcon name="owm" iconId={icon.toString()} />
+      <div className="forecast-summary__date-temp-box">
+        <div className="forecast-summary__date">{formattedDate}</div>
+        <div className="forecast-summary__temperature">{temperature.max}°C</div>
       </div>
-      <div className="forecast-summary__temperature">{temperature.max}°C</div>
-      <div className="forecast-summary__description">{description}</div>
-      <button type="button" onClick={() => onSelect(date)}>
-        More Details
-      </button>
+      <div className="forecast-summary__icon-description-box">
+        <div className="forecast-summary__icon" data-testid="forecast-icon">
+          <WeatherIcon
+            className="forecast-summary__icon-style"
+            name="owm"
+            iconId={icon.toString()}
+          />
+        </div>
+        <div className="forecast-summary__description">{description}</div>
+      </div>
+      <div className="forecast-summary__button-box">
+        <button
+          className="forecast-summary__button"
+          type="button"
+          onClick={() => onSelect(date)}
+        >
+          Extra
+        </button>
+      </div>
     </div>
   );
 }

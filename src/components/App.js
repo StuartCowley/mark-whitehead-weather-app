@@ -44,16 +44,18 @@ function App() {
 
   return (
     <div className="weather-app">
-      <h1 className="weather-app__title">MARKS WEATHER PAGE</h1>
+      <div className="weather-app__location-text-box">
+        <h1 className="weather-app__title">MARKS WEATHER PAGE</h1>
+        <SearchForm
+          searchText={searchText}
+          setSearchText={setSearchText}
+          onSubmit={handleCitySearch}
+        />
+      </div>
       <LocationDetails
         city={location.city}
         country={location.country}
         errorMessage={errorMessage}
-      />
-      <SearchForm
-        searchText={searchText}
-        setSearchText={setSearchText}
-        onSubmit={handleCitySearch}
       />
       {!errorMessage && (
         <>
@@ -65,7 +67,6 @@ function App() {
           {selectedForecast && <ForecastDetails forecast={selectedForecast} />}
         </>
       )}
-      ;
     </div>
   );
 }
