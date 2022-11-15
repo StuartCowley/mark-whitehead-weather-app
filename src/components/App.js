@@ -44,7 +44,7 @@ function App() {
 
   return (
     <div className="weather-app">
-      <h1>Weather App</h1>
+      <h1 className="weather-app__title">MARKS WEATHER PAGE</h1>
       <LocationDetails
         city={location.city}
         country={location.country}
@@ -58,6 +58,7 @@ function App() {
       {!errorMessage && (
         <>
           <ForecastSummaries
+            className="forecast-summaries"
             forecasts={forecasts}
             onForecastSelect={handleForecastSelect}
           />

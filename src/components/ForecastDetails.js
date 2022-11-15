@@ -19,12 +19,14 @@ function ForecastDetails(props) {
           Min Temp {forecast.temperature.min}°C
         </div>
         <div className="forecast-details__wind-speed">
-          {forecast.wind.speed} Mph
+          Wind {forecast.wind.speed} Mph
         </div>
         <div className="forecast-details__wind-direction">
-          {forecast.wind.direction}
+          Wind Direction {forecast.wind.direction}
         </div>
-        <div className="forecast-details__humidity">{forecast.humidity} %</div>
+        <div className="forecast-details__humidity">
+          Humidity {forecast.humidity} %
+        </div>
         <div className="forecast-details__description">
           {forecast.description}
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import WeatherIcon from 'react-icons-weather';
+import '../styles/ForecastSummary.css';
 
 function ForecastSummary(props) {
   const { date, temperature, description, icon, onSelect } = props;
@@ -12,7 +13,7 @@ function ForecastSummary(props) {
       <div className="forecast-summary__icon" data-testid="forecast-icon">
         <WeatherIcon name="owm" iconId={icon.toString()} />
       </div>
-      <div className="forecast-summary__temperature">{temperature.max}</div>
+      <div className="forecast-summary__temperature">{temperature.max}°C</div>
       <div className="forecast-summary__description">{description}</div>
       <button type="button" onClick={() => onSelect(date)}>
         More Details
