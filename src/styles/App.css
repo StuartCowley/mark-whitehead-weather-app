@@ -4,11 +4,11 @@
     flex-direction: column;
     align-items: center;
     border: 2px solid;
-    border-radius: 5px;
+    border-radius: 0px;
     margin: auto;
     margin-top: 20px;
     width: 50%;
-    height: 800px;
+    height: auto;
 }
 .weather-app__title {
     margin-top: 10px;

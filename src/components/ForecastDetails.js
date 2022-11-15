@@ -9,7 +9,7 @@ function ForecastDetails(props) {
   const formattedDate = new Date(forecast.date).toDateString();
 
   return (
-    <div>
+    <div className="forecast-details__outer-div">
       <div className="forecast-details">
         <div className="forecast-details__date">{formattedDate}</div>
         <div className="forecast-details__temperature">
